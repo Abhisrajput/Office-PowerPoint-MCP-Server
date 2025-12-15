@@ -23,13 +23,20 @@ from tools import (
 )
 
 # Initialize the FastMCP server
-app = FastMCP(
-    name="ppt-mcp-server"
-)
 
+from fastapi import FastAPI
+
+# Initialize FastMCP server
+server = FastMCP(name="ppt-mcp-server")
+
+# Get the FastAPI app inside FastMCP
+app = server.app     # <<-- THIS is the real FastAPI app
+
+# Health check endpoint for Render
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
 
 # Global state to store presentations in memory
 presentations = {}

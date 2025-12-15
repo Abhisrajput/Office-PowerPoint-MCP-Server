@@ -1,15 +1,11 @@
 services:
   - type: web
-    name: pptx-mcp-server
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python ppt_mcp_server.py --transport http --port $PORT
-    envVars:
-      - key: PORT
-        value: 8000
-      - key: PPT_TEMPLATE_PATH
-        value: /opt/render/project/src/templates
-      - key: PYTHON_VERSION
-        value: 3.11.0
+    name: office-ppt-mcp-server
+    env: docker
+    plan: starter
+    region: oregon
+    dockerfilePath: ./Dockerfile
     healthCheckPath: /health
-    plan: free
+    autoDeploy: true
+    envVars:
+      PORT: 8000
