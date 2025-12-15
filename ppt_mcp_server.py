@@ -22,7 +22,9 @@ from tools import (
     register_transition_tools
 )
 
-
+# Initialize the FastMCP server
+app = FastMCP(
+    name="ppt-mcp-server"
 
 
 # Global state to store presentations in memory
