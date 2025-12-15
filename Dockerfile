@@ -19,4 +19,5 @@ ENV PORT=8000
 EXPOSE 8000
 
 # Start MCP server over HTTP, binding to 0.0.0.0 and $PORT
-CMD ["sh", "-c", "python ppt_mcp_server.py --transport http --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "python ppt_mcp_server.py --transport http --port ${PORT:-8000}"]
+
