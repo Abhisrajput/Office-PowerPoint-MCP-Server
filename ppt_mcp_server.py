@@ -22,20 +22,6 @@ from tools import (
     register_transition_tools
 )
 
-# Initialize the FastMCP server
-
-from fastapi import FastAPI
-
-# Initialize FastMCP server
-server = FastMCP(name="ppt-mcp-server")
-
-# FastAPI app used for HTTP transport
-app = server.http_app
-
-# Health endpoint for Render
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
 
 
 
