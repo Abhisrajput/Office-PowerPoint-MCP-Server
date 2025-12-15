@@ -27,6 +27,10 @@ app = FastMCP(
     name="ppt-mcp-server"
 )
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
 # Global state to store presentations in memory
 presentations = {}
 current_presentation_id = None

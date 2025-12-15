@@ -1,0 +1,252 @@
+{
+  "tavant_orange": {
+    "name": "Tavant Orange",
+    "description": "Tavant Technologies brand colors - Black and Orange theme",
+    "colors": {
+      "primary": [0, 0, 0],
+      "secondary": [242, 101, 34],
+      "accent": [242, 101, 34],
+      "light": [245, 245, 245],
+      "text": [51, 51, 51],
+      "white": [255, 255, 255],
+      "table_header": [242, 101, 34],
+      "table_border": [0, 0, 0]
+    },
+    "fonts": {
+      "heading": "Arial",
+      "body": "Arial",
+      "sizes": {
+        "title": 44,
+        "heading1": 28,
+        "heading2": 24,
+        "body": 12,
+        "caption": 10
+      }
+    }
+  },
+  "tavant_weekly_status_report": {
+    "template_id": "tavant_wsr",
+    "name": "Tavant Weekly Status Report",
+    "description": "Professional weekly status report template with Tavant branding",
+    "color_scheme": "tavant_orange",
+    "slides": [
+      {
+        "slide_type": "title",
+        "layout_name": "Title Slide",
+        "elements": {
+          "background": {
+            "type": "solid",
+            "color": [0, 0, 0]
+          },
+          "brand_name": {
+            "text": "TAVANT",
+            "position": {"left": 0.5, "top": 0.4, "width": 4, "height": 0.5},
+            "font_size": 24,
+            "font_color": [242, 101, 34],
+            "bold": true
+          },
+          "title": {
+            "placeholder": "{{REPORT_TITLE}}",
+            "default": "WEEKLY STATUS REPORT",
+            "position": {"left": 0.5, "top": 2.5, "width": 12, "height": 1},
+            "font_size": 44,
+            "font_color": [255, 255, 255],
+            "bold": true
+          },
+          "subtitle": {
+            "placeholder": "{{PROJECT_NAME}}",
+            "default": "Project Name",
+            "position": {"left": 0.5, "top": 3.6, "width": 10, "height": 0.5},
+            "font_size": 24,
+            "font_color": [255, 255, 255]
+          },
+          "date": {
+            "placeholder": "{{REPORT_DATE}}",
+            "position": {"left": 0.5, "top": 4.5, "width": 4, "height": 0.4},
+            "font_size": 18,
+            "font_color": [242, 101, 34]
+          },
+          "period": {
+            "placeholder": "{{PERIOD_LABEL}}",
+            "position": {"left": 0.5, "top": 5.0, "width": 8, "height": 0.3},
+            "font_size": 14,
+            "font_color": [255, 255, 255]
+          },
+          "accent_bar": {
+            "type": "rectangle",
+            "position": {"left": 0, "top": 6.8, "width": 13.33, "height": 0.15},
+            "fill_color": [242, 101, 34]
+          }
+        }
+      },
+      {
+        "slide_type": "executive_summary",
+        "layout_name": "Executive Summary",
+        "elements": {
+          "title": {
+            "text": "Executive Summary",
+            "position": {"left": 0.36, "top": 0.3, "width": 12, "height": 0.5},
+            "font_size": 28,
+            "font_color": [51, 51, 51],
+            "bold": true
+          },
+          "title_underline": {
+            "type": "rectangle",
+            "position": {"left": 0.36, "top": 0.8, "width": 12.6, "height": 0.05},
+            "fill_color": [242, 101, 34]
+          },
+          "accomplishments_header": {
+            "text": "Key Accomplishments for Last Period",
+            "position": {"left": 0.36, "top": 1.0, "width": 5.8, "height": 0.35},
+            "font_size": 11,
+            "font_color": [255, 255, 255],
+            "fill_color": [242, 101, 34],
+            "bold": true
+          },
+          "accomplishments_content": {
+            "placeholder": "{{KEY_ACCOMPLISHMENTS}}",
+            "type": "bullet_list",
+            "position": {"left": 0.36, "top": 1.4, "width": 5.8, "height": 2.0},
+            "font_size": 10
+          },
+          "priorities_header": {
+            "text": "Top Priorities for Next Period",
+            "position": {"left": 6.5, "top": 1.0, "width": 6.5, "height": 0.35},
+            "font_size": 11,
+            "font_color": [255, 255, 255],
+            "fill_color": [242, 101, 34],
+            "bold": true
+          },
+          "priorities_table": {
+            "placeholder": "{{PRIORITIES_TABLE}}",
+            "type": "table",
+            "position": {"left": 6.5, "top": 1.4, "width": 6.5, "height": 2.0},
+            "columns": ["#", "Description", "Owner"],
+            "column_widths": [0.4, 4.2, 1.9],
+            "max_rows": 5
+          },
+          "risks_header": {
+            "text": "Key Risks, Issues and Action Items",
+            "position": {"left": 0.36, "top": 3.6, "width": 12.6, "height": 0.35},
+            "font_size": 11,
+            "font_color": [255, 255, 255],
+            "fill_color": [242, 101, 34],
+            "bold": true
+          },
+          "risks_table": {
+            "placeholder": "{{RISKS_TABLE}}",
+            "type": "table",
+            "position": {"left": 0.36, "top": 4.0, "width": 12.6, "height": 1.5},
+            "columns": ["#", "Action Item", "Owner", "Target Date", "Status"],
+            "column_widths": [0.4, 6.5, 2.0, 1.5, 2.2],
+            "max_rows": 3
+          },
+          "footer_brand": {
+            "text": "TAVANT",
+            "position": {"left": 11.5, "top": 7.0, "width": 1.5, "height": 0.3},
+            "font_size": 10,
+            "font_color": [242, 101, 34],
+            "bold": true,
+            "align": "right"
+          }
+        }
+      },
+      {
+        "slide_type": "milestones",
+        "layout_name": "Key Milestones",
+        "elements": {
+          "title": {
+            "text": "Key Milestones",
+            "position": {"left": 0.36, "top": 0.3, "width": 12, "height": 0.5},
+            "font_size": 28,
+            "font_color": [51, 51, 51],
+            "bold": true
+          },
+          "title_underline": {
+            "type": "rectangle",
+            "position": {"left": 0.36, "top": 0.8, "width": 12.6, "height": 0.05},
+            "fill_color": [242, 101, 34]
+          },
+          "milestones_header": {
+            "text": "Key Milestones and Status",
+            "position": {"left": 0.36, "top": 1.0, "width": 12.6, "height": 0.35},
+            "font_size": 11,
+            "font_color": [255, 255, 255],
+            "fill_color": [242, 101, 34],
+            "bold": true
+          },
+          "milestones_table": {
+            "placeholder": "{{MILESTONES_TABLE}}",
+            "type": "table",
+            "position": {"left": 0.36, "top": 1.4, "width": 12.6, "height": 2.5},
+            "columns": ["#", "Milestone Description", "Target Date", "Status"],
+            "column_widths": [0.5, 7.5, 2.3, 2.3],
+            "max_rows": 6
+          },
+          "upcoming_header": {
+            "text": "Upcoming Key Milestones",
+            "position": {"left": 0.36, "top": 4.2, "width": 12.6, "height": 0.35},
+            "font_size": 11,
+            "font_color": [255, 255, 255],
+            "fill_color": [242, 101, 34],
+            "bold": true
+          },
+          "upcoming_table": {
+            "placeholder": "{{UPCOMING_TABLE}}",
+            "type": "table",
+            "position": {"left": 0.36, "top": 4.6, "width": 12.6, "height": 1.4},
+            "columns": ["Milestone", "Target Date", "Owner"],
+            "column_widths": [8, 2.3, 2.3],
+            "max_rows": 3
+          },
+          "footer_brand": {
+            "text": "TAVANT",
+            "position": {"left": 11.5, "top": 7.0, "width": 1.5, "height": 0.3},
+            "font_size": 10,
+            "font_color": [242, 101, 34],
+            "bold": true,
+            "align": "right"
+          }
+        }
+      },
+      {
+        "slide_type": "thank_you",
+        "layout_name": "Thank You",
+        "elements": {
+          "background": {
+            "type": "solid",
+            "color": [0, 0, 0]
+          },
+          "title": {
+            "text": "THANK YOU",
+            "position": {"left": 0.5, "top": 2.8, "width": 12.33, "height": 1.2},
+            "font_size": 56,
+            "font_color": [255, 255, 255],
+            "bold": true,
+            "align": "center"
+          },
+          "brand_name": {
+            "text": "TAVANT",
+            "position": {"left": 8.5, "top": 5.5, "width": 4, "height": 0.5},
+            "font_size": 24,
+            "font_color": [242, 101, 34],
+            "bold": true,
+            "align": "right"
+          },
+          "contact": {
+            "placeholder": "{{CONTACT_INFO}}",
+            "position": {"left": 8.5, "top": 6.1, "width": 4, "height": 0.3},
+            "font_size": 10,
+            "font_color": [255, 255, 255],
+            "align": "right"
+          },
+          "accent_bar": {
+            "type": "rectangle",
+            "position": {"left": 0, "top": 6.8, "width": 13.33, "height": 0.15},
+            "fill_color": [242, 101, 34]
+          }
+        }
+      }
+    ]
+  }
+}
