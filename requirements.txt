@@ -5,3 +5,5 @@ fonttools
 uvicorn>=0.20.0
 starlette>=0.23.0
 httpx>=0.23.0
+fastapi>=0.110.0
+uvicorn>=0.20.0
